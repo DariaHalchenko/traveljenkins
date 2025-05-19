@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Docker run') {
             steps {
-                sh 'docker run -p 3002:3000 --name app-container -d travel'
+                sh 'docker run -p 3002:3000 --name container -d travel'
             }
         }
     }
